@@ -44,7 +44,6 @@ Graph bfs(const Graph & graph, Graph::NodeId start_node){
 int main(int argc,char** argv){
    if (argc > 1) {
         Graph g(argv[1], Graph::directed);
-        Graph bfs_tree = bfs(g, 0);
-        bfs_tree.print();
+        printNeighbors(g, 26);
     }
 }
